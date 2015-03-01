@@ -1,0 +1,12 @@
+Possibly unhandled [91mError[0m[91m:[0m[37m [0m[97mout of memory[0m
+[0m [0m[90m→[0m [0m[94mimage.js[0m[36m:[0m[96m29[0m[37m [0m[97mImage.inspect [as src][0m[90m mod:canvas/lib/image.js:29:17[0m
+[0m [0m[90m→[0m [0m[94mfoo.js[0m[36m:[0m[96m41[0m[37m [0m[90m mod:pixelfoo/foo.js:41:13[0m
+[0m [0m[90m→[0m [0m[94mutil.js[0m[36m:[0m[96m29[0m[37m [0m[97mtryCatch2[0m[90m mod:bluebird:util.js:29:21[0m
+[0m [0m[90m→[0m [0m[94mpromise.js[0m[36m:[0m[96m562[0m[37m [0m[97mPromise._resolveFromResolver[0m[90m mod:bluebird:promise.js:562:13[0m
+[0m [0m[90m→[0m [0m[94mpromise.js[0m[36m:[0m[96m58[0m[37m [0m[97mnew Promise[0m[90m mod:bluebird:promise.js:58:37[0m
+[0m [0m[90m→[0m [0m[94mfoo.js[0m[36m:[0m[96m33[0m[37m [0m[97mspriteFromBuffer[0m[90m mod:pixelfoo/foo.js:33:10[0m
+[0m [0m[90m→[0m [0m[94mutil.js[0m[36m:[0m[96m21[0m[37m [0m[97mtryCatch1[0m[90m mod:bluebird:util.js:21:21[0m
+[0m [0m[90m→[0m [0m[94mpromise.js[0m[36m:[0m[96m591[0m[37m [0m[97mPromise._settlePromiseFromHandler[0m[90m mod:bluebird:promise.js:591:[0m [0m  [0m[90m13[0m
+[0m [0m[90m→[0m [0m[94mpromise.js[0m[36m:[0m[96m755[0m[37m [0m[97mPromise._settlePromiseAt[0m[90m mod:bluebird:promise.js:755:18[0m
+[0m [0m[90m→[0m [0m[94mpromise.js[0m[36m:[0m[96m326[0m[37m [0m[97mPromise._settlePromiseAtPostResolution[0m[90m mod:bluebird:promise.js[0m [0m  [0m[90m:326:10[0m
+[0m

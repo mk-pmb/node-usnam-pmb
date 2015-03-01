@@ -1,0 +1,18 @@
+{
+  "name": "usnam-pmb",
+  "version": "0.2.0",
+  "description": "Concise stack traces for node: pretty-error + compact theme (still with paths) + auto-start.",
+  "main": "pec.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "M.K.",
+  "repository": {
+    "type": "git", "url": "https://github.com/mk-pmb/node-usnam-pmb.git"
+  },
+  "bugs": { "url": "https://github.com/mk-pmb/node-usnam-pmb/issues" },
+  "license": "ISC",
+  "dependencies": {
+    "pretty-error": "^1.1.1"
+  }
+}
