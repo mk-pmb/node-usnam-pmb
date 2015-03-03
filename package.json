@@ -1,6 +1,6 @@
 {
   "name": "usnam-pmb",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Concise stack traces for node: pretty-error + compact theme (still with paths) + auto-start.",
   "main": "pec.js",
   "scripts": {
@@ -12,6 +12,10 @@
   },
   "bugs": { "url": "https://github.com/mk-pmb/node-usnam-pmb/issues" },
   "license": "ISC",
+  "keywords": [
+    "pretty-error", "theme", "compact", "concise",
+    "stack trace", "stack traces", "exception", "error"
+  ],
   "dependencies": {
     "pretty-error": "^1.1.1"
   }
