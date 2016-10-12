@@ -1,22 +1,37 @@
-{
-  "name": "usnam-pmb",
-  "version": "0.2.1",
+{  "name": "usnam-pmb",
+  "version": "0.2.2",
   "description": "Concise stack traces for node: pretty-error + compact theme (still with paths) + auto-start.",
-  "main": "pec.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "M.K.",
-  "repository": {
-    "type": "git", "url": "https://github.com/mk-pmb/node-usnam-pmb.git"
-  },
-  "bugs": { "url": "https://github.com/mk-pmb/node-usnam-pmb/issues" },
-  "license": "ISC",
   "keywords": [
     "pretty-error", "theme", "compact", "concise",
     "stack trace", "stack traces", "exception", "error"
   ],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/node-usnam-pmb#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/node-usnam-pmb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/node-usnam-pmb/issues"
+  },
+
+  "config": { "for_details": "see npm-config2env-datatypes-demo" },
+
+  "private": false, "license": "ISC",
+
+  "main": "pec.js",
+  "scripts": { "test": "nodejs test.js" },
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+
   "dependencies": {
+    "clarify": "^2.0.0",
     "pretty-error": "^1.1.1"
-  }
+  },
+
+
+  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
 }

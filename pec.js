@@ -2,11 +2,12 @@
 /*jslint indent: 2, maxlen: 80, continue: true, unparam: true, node: true */
 'use strict';
 
+require('clarify');
+
+
 var primaryNodeModulesDir, chr = String.fromCharCode,
-  PrettyError = require('pretty-error'),
-  pathLib = require('path'),
-  dirN = pathLib.dirname,
-  pe = new PrettyError();
+  PrettyError = require('pretty-error'), pe = new PrettyError(),
+  pathLib = require('path'), dirN = pathLib.dirname;
 
 
 pe.aliasParentDirs = function (path, alias, ups) {
@@ -35,16 +36,22 @@ pe.aliasModuleDir = function almd(modName) {
 };
 
 
-pe.aliasModuleDir([
-  // common flow-control packages:
+pe.popularModules = [
   'async',
   'bluebird',
+  'eslint',
+  'grunt',
+  'jslint',
   'lodash',
+  'pretty-error',
   'q',
-]);
+];
+
+pe.aliasModuleDir(pe.popularModules);
 
 
 pe.primaryNodeModulesDir = (function guessPrimaryNodeModulesDir(candidates) {
+  // Try and find a node modules directory above ours.
   var shortest = dirN(dirN(module.filename));
   candidates.map(function (candi) {
     try {
@@ -55,14 +62,7 @@ pe.primaryNodeModulesDir = (function guessPrimaryNodeModulesDir(candidates) {
     if (candi.length < shortest.length) { shortest = candi; }
   });
   return shortest;
-}([
-  // Use this list of modules to try and find a node modules directory
-  // above the one where you installed p.e.c.:
-  'pretty-error',
-  'lodash',
-  'jslint',
-  'grunt',
-]));
+}(pe.popularModules));
 
 
 pe.aliasParentDirs(pe.primaryNodeModulesDir, 'mod:', 0);

@@ -8,6 +8,9 @@ Concise stack traces for node.js:
     * still with paths
   * auto-start
   * some default path aliases
+  * auto-require [clarify][npm-clarify]:
+    strips nodejs's internal module loader files from stack trace.
+
 
 The package name is derrived from "Ausnahme", german for *exception*,
 dialectally contracted to the limits of what I could recognize.
@@ -28,3 +31,7 @@ Todo
 License
 -------
 ISC
+
+
+
+  [npm-clarify]: https://www.npmjs.com/package/clarify
