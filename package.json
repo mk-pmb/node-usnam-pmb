@@ -1,5 +1,5 @@
 {  "name": "usnam-pmb",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Concise stack traces for node: pretty-error + compact theme (still with paths) + auto-start.",
   "keywords": [
     "pretty-error", "theme", "compact", "concise",
@@ -21,7 +21,7 @@
   "private": false, "license": "ISC",
 
   "main": "pec.js",
-  "scripts": { "test": "nodejs test.js" },
+  "scripts": { "test": "nodejs test/all.js" },
   "directories": {
     "doc": "doc",
     "test": "test"
@@ -29,7 +29,7 @@
 
   "dependencies": {
     "clarify": "^2.0.0",
-    "pretty-error": "^1.1.1"
+    "pretty-error": "^2.0.1"
   },
 
 
