@@ -108,6 +108,12 @@ pe.appendStyleShortened({
 });
 
 
+pe.maybeStart = function maybeStart() {
+  if (process.env.USNAM_COLORIZE) { return pe.start(); }
+  if (!process.stderr.isTTY) { return; }
+  pe.start();
+};
 
-pe.start();
+
+pe.maybeStart();
 module.exports = pe;
